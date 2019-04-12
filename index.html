@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <title>Document</title>
+  <link rel="icon" href="" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-content">
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <img src="img/logo.png" alt="" class="mobile-img">
+      <div class="header-content__menu flex-c">
+        <ul class="header-list flex-c">
+          <li class="header-list__item"><a href="#frst">главная</a></li>
+          <li class="header-list__item"><a href="#">стоимость</a></li>
+          <li class="header-list__item"><a href="#">о нас</a></li>
+          <li class="header-list__item"><a href="#">выполненные работы</a></li>
+        </ul>
+        <div class="header-logo">
+          <img src="img/logo.png" alt="">
+        </div>
+        <ul class="header-list flex-c">
+          <li class="header-list__item"><a href="#">видеоотзывы</a></li>
+          <li class="header-list__item"><a href="#">партнеры</a></li>
+          <li class="header-list__item"><a href="#">гарантии</a></li>
+          <li class="header-list__item"><a href="#">контакты</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="main__bg wrapper flex-s">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="main-frst">
+      <div class="wrapper" id="frst">
+        <h4 class="title">все виды ремонтных работ</h4>
+        <p class="description">Мы проведем для вас бесплатную дефектовку в вашем присутствии <br>и предоставим 4 варианта расчета стоимости</p>
+        <a href="#" class="wb-btn">записаться на сервис</a>
+      </div>
+    </div>
+    <div class="main-scnd">
+      <div class="wrapper">
+        <div class="main-scnd__top flex-c">
+          <div class="title-block">
+            <p class="wb-title">стоимость ремонтных работ под ключ</p>
+            <p class="wb-text">Все расходные материалы включены в стоимость <br> Вы имеете возможность контролировать качество расходных материалов,<br> грунтов, красок и зап. частей!</p>
+          </div>
+          <button class="wb-btn btn-simple js-show-price"><i>1</i> <span class="text"></span></button>
+        </div>
+        <div class="price-block" style="background-image: url(img/car.png);">
+          <ul class="circle-list">
+            <li class="circle-list__item hood" data-target="hood"></li>
+            <li class="circle-list__item bumper" data-target="bumper"></li>
+            <li class="circle-list__item headlight" data-target="headlight"></li>
+            <li class="circle-list__item front-glass" data-target="front-glass"></li>
+            <li class="circle-list__item front-fender" data-target="front-fender"></li>
+            <li class="circle-list__item mirror" data-target="mirror"></li>
+            <li class="circle-list__item panel" data-target="panel"></li>
+            <li class="circle-list__item window" data-target="window"></li>
+            <li class="circle-list__item door" data-target="door"></li>
+            <li class="circle-list__item roof" data-target="roof"></li>
+            <li class="circle-list__item knob" data-target="knob"></li>
+            <li class="circle-list__item trunk" data-target="trunk"></li>
+            <li class="circle-list__item back-glass" data-target="back-glass"></li>
+            <li class="circle-list__item back-fender" data-target="back-fender"></li>
+          </ul>
+          <ul class="price-list">
+            <li class="list-title">заменить</li>
+            <li class="price-list__item chevron front-glass" data-target="front-glass">
+              <p class="title">замена лобового стекла</p>
+              <span class="mobile-text">лобовое стекло</span>
+              <p class="price">6900 руб</p>
+            </li>
+            <li class="price-list__item chevron window" data-target="window">
+              <p class="title">замена бокового стекла/форточки</p>
+              <span class="mobile-text">боковое стекло/форточка</span>
+              <p class="price">6900 руб</p>
+            </li>
+            <li class="price-list__item chevron back-glass" data-target="back-glass">
+              <p class="title">замена заднего стекла</p>
+              <span class="mobile-text">заднее стекло</span>
+              <p class="price">6900 руб</p>
+            </li>
+            <li class="price-list__item chevron headlight" data-target="headlight">
+              <p class="title">полировка/замена фары</p>
+              <span class="mobile-text">фары (полировка / замена)</span>
+              <p class="price">6900 руб</p>
+            </li>
+            <li class="list-title">покрасить</li>
+            <li class="price-list__item chevron-reverse hood" data-target="hood">
+              <p class="title">покраска капота</p>
+              <span class="mobile-text">капот</span>
+              <p class="price">6900 руб</p>
+            </li>
+            <li class="price-list__item chevron bumper" data-target="bumper">
+              <p class="title">покраска бампера</p>
+              <span class="mobile-text">бампер</span>
+              <p class="price">6900 руб</p>
+            </li>
+            <li class="price-list__item chevron front-fender" data-target="front-fender">
+              <p class="title">покраска крыла</p>
+              <span class="mobile-text">Крыло</span>
+              <p class="price">6900 руб</p>
+            </li>
+            <li class="price-list__item chevron-reverse mirror" data-target="mirror">
+              <p class="title">покраска зеркала</p>
+              <span class="mobile-text">зеркало</span>
+              <p class="price">6900 руб</p>
+            </li>
+            <li class="price-list__item chevron-reverse panel" data-target="panel">
+              <p class="title">покраска порога</p>
+              <span class="mobile-text">порог</span>
+              <p class="price">6900 руб</p>
+            </li>
+            <li class="price-list__item chevron door" data-target="door">
+              <p class="title">покраска двери</p>
+              <span class="mobile-text">дверь</span>
+              <p class="price">6900 руб</p>
+            </li>
+            <li class="price-list__item chevron roof" data-target="roof">
+              <p class="title">покраска крыши</p>
+              <span class="mobile-text">крышу</span>
+              <p class="price">6900 руб</p>
+            </li>
+            <li class="price-list__item chevron knob" data-target="knob">
+              <p class="title">покраска дверной ручки</p>
+              <span class="mobile-text">дверную ручку</span>
+              <p class="price">6900 руб</p>
+            </li>
+            <li class="price-list__item chevron-reverse trunk" data-target="trunk">
+              <p class="title">покраска крышки багажника</p>
+              <span class="mobile-text">крышку багажника</span>
+              <p class="price">6900 руб</p>
+            </li>
+            <li class="price-list__item chevron back-fender" data-target="back-fender">
+              <p class="title">покраска крыла</p>
+              <span class="mobile-text">крыло</span>
+              <p class="price">6900 руб</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="main-third">
+      <div class="wrapper">
+        <div class="main-third__preview flex-s">
+          <div class="block-description">
+            <p class="wb-title">о нас</p>
+            <p class="wb-text">Автосервис “Корвет” более 10 лет предоставляет услуги по техническому обслуживанию и ремонту автомобилей.  За этот период мастера станции накопили огромный опыт по ремонту европейских, корейских и японских авто.</p>
+            <p class="wb-text">
+              В наличии СТО современные подъемники, необходимое оборудования и специализированный инструмент для предоставления качественного ремонта втомобилей различных марок.
+            </p>
+          </div>
+          <div class="block-bg" style="background-image: url(img/place.png);"></div>
+        </div>
+        <div class="main-third__slider slider-counter">
+          <div class="slider-card" style="background-image: url(img/third__slider1.png);"></div>
+          <div class="slider-card" style="background-image: url(img/third__slider2.png);"></div>
+          <div class="slider-card" style="background-image: url(img/third__slider2.png);"></div>
+          <div class="slider-card" style="background-image: url(img/third__slider2.png);"></div>
+        </div>
+      </div>
+    </div>
+    <div class="main-fourth">
+      <div class="wrapper">
+        <div class="main-fourth__preview flex-s">
+          <div class="active-slide"></div>
+          <div class="preview-description">
+            <p class="wb-title">записаться на сервис</p>
+            <p class="wb-text">Все ваши проблемы мы решаем быстро и качественно. Нам важен каждый клиент и наша репутация. По окончании работ мы выдаем накладную с подробным описанием всех расходов и выполненных нами работ.</p>
+            <p class="wb-text">Все наши клиенты остаются довольны результатами ремонта, но если у вас есть к нам претензии  - вы всегда можете нам об этом сообщить, оставив свой отзыв. Он будет рассмотрен в кратчайшие сроки и в обязательном порядке. </p>
+            <a href="#" class="wb-btn">записаться на сервис</a>
+          </div>
+        </div>
+        <div class="main-fourth__slider slider-counter">
+          <div class="completed-card">
+            <!-- <iframe class="completed-card__content" width="560" height="315" src="https://www.youtube.com/embed/4xaInTvFx4k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+          </div>
+          <div class="completed-card">
+            <div class="completed-card__content" style="background-image: url(img/completed-card1.png);"></div>
+          </div>
+          <div class="completed-card">
+            <div class="completed-card__content" style="background-image: url(img/completed-card2.png);"></div>
+          </div>
+          <div class="completed-card">
+            <div class="completed-card__content" style="background-image: url(img/completed-card1.png);"></div>
+          </div>
+          <div class="completed-card">
+            <div class="completed-card__content" style="background-image: url(img/completed-card2.png);"></div>
+          </div>
+          <div class="completed-card">
+            <div class="completed-card__content" style="background-image: url(img/completed-card2.png);"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-reviews">
+      <div class="wrapper">
+        <p class="wb-title">видеоотзывы</p>
+        <div class="review-container flex-c">
+          <div class="reviews-card"><!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/4xaInTvFx4k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+          </div>
+        </div>
+        <button class="wb-btn js-show-more btn-simple">больше отзывов</button>
+      </div>
+    </div>
+    <div class="main-partners">
+      <div class="wrapper">
+        <p class="wb-title">партнеры</p>
+        <div class="main-partners__content flex-c">
+          <div class="partner-card flex-c-c">
+            <img src="img/partner-example.png" alt="">
+          </div>
+          <div class="partner-card flex-c-c">
+            <img src="img/partner-example.png" alt="">
+          </div>
+          <div class="partner-card flex-c-c">
+            <img src="img/partner-example.png" alt="">
+          </div>
+          <div class="partner-card flex-c-c">
+            <img src="img/partner-example.png" alt="">
+          </div>
+          <div class="partner-card flex-c-c">
+            <img src="img/partner-example.png" alt="">
+          </div>
+          <div class="partner-card flex-c-c">
+            <img src="img/partner-example.png" alt="">
+          </div>
+          <div class="partner-card flex-c-c">
+            <img src="img/partner-example.png" alt="">
+          </div>
+          <div class="partner-card flex-c-c">
+            <img src="img/partner-example.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-info">
+      <div class="wrapper">
+        <div class="main-info__top flex-s">
+          <div class="block-info">
+            <p class="wb-title__small">автостоянка</p>
+            <div class="block-info__content flex-c">
+              <img src="img/car.svg" alt="">
+              <p class="text">На територии мастерской есть автостоянка специально для машин наших клиентов. Вы оставляете свой автомобиль на ремонт под нашу полную материальную тветственность. Наша стоянка круглосуточно охраняется.</p>
+            </div>
+          </div>
+          <div class="block-aditional flex-c">
+            <p class="wb-title__small">дополнительно</p>
+            <div class="aditional-content">
+              <img src="img/wheel.svg" alt="">
+              <span class="text">Шиномонтаж</span>
+            </div>
+            <div class="aditional-content">
+              <img src="img/instruments.svg" alt="">
+              <span class="text">Слюсарные работы</span>
+            </div>
+          </div>
+        </div>
+        <div class="main-info__middle flex-s">
+          <p class="wb-title__small">страховка</p>
+          <p class="text">Техцентр «Корвет» сотрудничает с лучшими и самыми надёжными страховыми компаниями московского региона. Для наших клиентов, мы предлагаем лучшие ценовые предложения по страхованию. Мы работаем по всем видам страхования: КАСКО,ОСАГО, страхование квартир и загородных домов и т.д.</p>
+        </div>
+        <div class="main-info__bottom flex-c">
+          <img src="img/insurance1.png" alt="">
+          <img src="img/insurance2.png" alt="">
+          <img src="img/insurance3.png" alt="">
+          <img src="img/insurance4.png" alt="">
+          <img src="img/insurance5.png" alt="">
+          <img src="img/insurance6.png" alt="">
+          <img src="img/insurance7.png" alt="">
+          <img src="img/insurance8.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="main-warranty">
+      <div class="wrapper">
+        <div class="main-warranty__container flex-s">
+          <div class="warranty-img" style="background-image: url(img/warranty-img.png);"></div>
+          <div class="warranty-content">
+            <p class="wb-title">гарантии</p>
+            <p class="wb-text">Мы выписываем 3-х летнюю гарантию на свои услуги. Так же вы можете воспользоваться нашим сервисом без ущерба для гарантии от производителя при обслуживании недавно приобретенного авто.</p>
+            <ul class="warranty-list">
+              <li class="warranty-list__item flex-c">
+                <img src="img/checkbox.svg" alt="">
+                <span>Высокое качество материалов</span>
+              </li>
+              <li class="warranty-list__item flex-c">
+                <img src="img/checkbox.svg" alt="">
+                <span>Квалифицырованные специалисты</span>
+              </li>
+              <li class="warranty-list__item flex-c">
+                <img src="img/checkbox.svg" alt="">
+                <span>Наша полная материальная ответственность</span>
+              </li>
+              <li class="warranty-list__item flex-c">
+                <img src="img/checkbox.svg" alt="">
+                <span>100% возврат денежных средств при невыполнении или не качественном выполнении нами обязательств</span>
+              </li>
+            </ul>
+            <div class="mobile-img" style="background-image: url(img/warranty-img.png);"></div>
+            <p class="wb-text">Если вы считаете, что мы нарушили свои обязательства или у вас емть претензии к качеству выполненных нами работ, вы можете оставить свою жалобу здесь. Она обязательно будет рассмотрена в кратчайшие строки.</p>
+            <a href="#" class="wb-btn btn-black">оставить жалобу</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-form">
+      <div class="wrapper flex-s">
+        <div class="contacts">
+          <p class="wb-title">контакты</p>
+          <div class="contacts-content">
+            <p class="title">Адрес:</p>
+            <span class="text">г. Москва, Люблинская улица, 60</span>
+          </div>
+          <div class="contacts-content">
+            <p class="title">Телефон:</p>
+            <a href="tel+7 (495) 796-34-34" class="text">+7 (495) 796-34-34</a>
+          </div>
+          <div class="contacts-content">
+            <p class="title">Режим работы:</p>
+            <span class="text">Ежедневно: 08:30 - 21:00 и до последнего клиента</span>
+          </div>
+          <div class="contacts-content">
+            <p class="title">Почта:</p>
+            <a href="mailto:automaster@gmail.com" class="text">automaster@gmail.com</a>
+          </div>
+        </div>
+        <form class="form flex-s">
+          <p class="wb-title">Форма связи</p>
+          <input type="text" class="form-field" placeholder="Имя">
+          <input type="text" class="form-field" placeholder="Телефон">
+          <textarea name="" class="form-field" placeholder="Опишите вашу проблему"></textarea>
+          <button class="wb-btn">отправить</button>
+        </form>
+      </div>
+    </div>
+    <div id="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.8813729864446!2d37.73617831592749!3d55.67366298053223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab442910c5199%3A0xc9d35cafb5725a98!2z0JvRjtCx0LvQuNC90YHQutCw0Y8g0YPQuy4sIDYwLCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTA5Mzgy!5e0!3m2!1sru!2sua!4v1555012218500!5m2!1sru!2sua" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="wrapper flex-c">
+      <div class="footer-logo">
+        <img src="img/logo.png" alt="">
+      </div>
+      <div class="footer-contacts">
+        <a href="tel:+7 (495) 796-34-34" class="link"><i class="icon-phone"></i>+7 (495) 796-34-34</a>
+        <a href="mailto:automaster@gmail.com" class="link"><i class="icon-email"></i>automaster@gmail.com</a>
+      </div>
+      <ul class="footer-social flex-c">
+        <li class="footer-social__item">
+          <a href="#"><i class="icon-fb"></i></a>
+        </li>
+        <li class="footer-social__item">
+          <a href="#"><i class="icon-inst"></i></a>
+        </li>
+        <li class="footer-social__item">
+          <a href="#"><i class="icon-skype"></i></a>
+        </li>
+        <li class="footer-social__item">
+          <a href="#"><i class="icon-yt"></i></a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

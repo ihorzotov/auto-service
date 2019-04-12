@@ -1,0 +1,693 @@
+@media (min-width: 1025px){
+  .header-list__item{
+    &:hover{
+      color: #dd3939;
+    }
+  }
+  .wb-btn{
+    &:hover{
+      background:#ff0000;
+    }
+    &.btn-simple{
+      &:hover{
+        background:#dd2121;
+        color: #fff;
+      }
+    }
+    &.btn-black{
+      &:hover{
+        background:#0e0e0e;
+        color: #fff;
+      }
+    }
+  }
+  .footer-social__item{
+    &:hover{
+      border: 1px solid #dd2121;
+      background: #dd2121;
+    }
+  }
+  .circle-list__item:not(.active){
+    &:hover{
+      background: #ff0000;
+      transition-delay: 0s;
+    }
+  }
+}
+
+@media (max-width: 1279px){
+  /*HEADER*/
+  .header-list__item + .header-list__item {
+    margin-left: 20px;
+  }
+  /**/
+  /*main-scnd content*/
+  .price-block{
+    margin-bottom: 40px;
+  }
+  .price-list{
+    width: 100%;
+    position: absolute;
+    top: calc(100% + 40px);
+    &__item{
+      width: 53%;
+      height: auto;
+      background: transparent;
+      color: #0a0a0a;
+      padding: 0;
+      top: 0!important;
+      left: 50%!important;
+      transform: translateX(-50%);
+      justify-content: space-between;
+      &:before{
+        display:none;
+      }
+      .title{
+        align-self: auto;
+        font-size: 20px;
+        font-weight: 600;
+      }
+      .price{
+        font-size: 22px;
+        width: auto;
+        align-self: auto;
+        color: #1f5192;
+      }
+    }
+  }
+  .main-scnd__top .wb-btn{
+    display: none;
+  }
+  .title-block{
+    width: 82%;
+    br{
+      display: none;
+    }
+  }
+  /**/
+}
+@media (max-width: 1139px){
+  /*STYLES*/
+  .wrapper{
+    max-width: 720px;
+  }
+  .wb-title__small{
+    margin-bottom: 28px;
+  }
+  /**/
+  /*HEADER*/
+  .header{
+    .mobile-img{
+      display: block;
+    }
+    &-content{
+      position: relative;
+      &__menu{
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background-image: -moz-linear-gradient( 90deg, rgb(11,33,62) 0%, rgb(18,49,89) 100%);
+        background-image: -webkit-linear-gradient( 90deg, rgb(11,33,62) 0%, rgb(18,49,89) 100%);
+        background-image: -ms-linear-gradient( 90deg, rgb(11,33,62) 0%, rgb(18,49,89) 100%);
+        padding: 20px 55px 90px 55px;
+        overflow-x: hidden;
+        transform: translateY(-100%);
+        opacity: 0;
+        transition: transform .4s , opacity .6s;
+        &.active{
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    }
+    &-logo{
+      order: 1;
+      width: 100%;
+      margin-bottom: 70px;
+      img{
+        width: 177px;
+        height: 90px;
+      }
+      &+.header-list{
+        width: 34%
+      }
+    }
+    &-list{
+      order: 2;
+      width: 66%;
+      flex-direction: column;
+      align-items: flex-start;
+      font-weight: 300;
+      font-size: 20px;
+      &__item+&__item{
+        margin: 55px 0 0 0;
+      }
+    }
+  }
+  .hamburger{
+    position: absolute;
+    right: 35px;
+    top: 50px;
+    display: block;
+    z-index: 90;
+  }
+  /*==================*/
+  /*MAIN*/
+  /*main-frst content*/
+  .main-frst{
+    padding-top: 250px;
+    height: 1025px;
+    margin-top: -110px;
+    background: url(../img/main-frst__tablet.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    .title{
+      width: 100%;
+      font-size: 56px;
+      line-height: 70px;
+      margin-bottom: 30px;
+    }
+    .description{
+      font-weight: 600;
+    }
+  }
+  /**/
+  /*main-scnd content*/
+  .main-scnd__top{
+    margin-bottom: 40px;
+  }
+  .title-block{
+    width: 100%;
+  }
+  .price-block{
+    width: 100%;
+    height: 310px;
+    background: 50% 50% no-repeat;
+    background-size: contain;
+  }
+  /**/
+  /*main-third*/
+  .main-third{
+    margin-bottom: 110px;
+    .slider-card{
+      height: 190px;
+    }
+  }
+  .block-description{
+    width: 50%;
+    padding-right: 20px;
+  }
+  .block-bg{
+    width: 50%;
+  }
+  /**/
+  /*main-fourth*/
+  .main-fourth{
+    .slick-list{
+      margin-left: -208px;
+    }
+  }
+  .active-slide{
+    order: 2;
+    width: 100%;
+    height: 435px;
+  }
+  .preview-description{
+    width: 100%;
+    margin: 0 0 50px 0;
+    .wb-text{
+      height: auto;
+    }
+  }
+  /**/
+  /*main-reviews*/
+  .main-reviews{
+    margin-bottom: 120px;
+  }
+  .reviews-card{
+    width: calc(50% - 30px);
+    height: 205px;
+    &:nth-child(4) ~ .reviews-card{
+      display: none;
+    }
+  }
+  /**/
+  /*main-partners*/
+  .main-partners{
+    margin-bottom: 100px;
+  }
+  .partner-card{
+    height: 100px;
+  }
+  /**/
+  /*main-info*/
+  .main-info{
+    padding: 80px 0;
+    &__middle{
+      margin-bottom: 28px;
+    }
+    &__bottom{
+      justify-content: flex-start;
+      margin:0 0 -18px -40px;
+      img{
+        margin: 0 0 18px 40px;
+      }
+    }
+  }
+  .block-info__content{
+    align-items: flex-start;
+    img{
+      height: 70px;
+      width: 82px;
+    }
+    .text{
+      font-size: 16px;
+      line-height: 22px;
+      width: calc(100% - 150px);
+    }
+  }
+  .block-aditional{
+    align-items: flex-start;
+    .wb-title__small{
+      padding-left: 18px;
+    }
+  }
+  /**/
+  /*main-warranty*/
+  .main-warranty{
+    margin-bottom: 120px;
+    &__container{
+      display: block;
+    }
+  }
+  .warranty-img{
+    float: left;
+    background: 30% 50% no-repeat; 
+    background-size: cover;
+    height: 420px;
+  }
+  .warranty-content{
+    display: inline;
+  }
+  /**/
+  /*main-form*/
+  .main-form{
+    .form{
+      order: 1;
+      width: 100%;
+      margin-bottom: 60px;
+    }
+    .contacts{
+      order: 2;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      .wb-title{
+        width: 100%;
+      }
+      &-content{
+        width: 50%;
+        margin: 0;
+        &:nth-child(even){
+          order: 1;
+        }
+        &:nth-child(odd){
+          order: 2;
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+  /**/
+  /*==================*/
+  /*FOOTER*/
+  .footer{
+    &-logo{
+      padding-left: 20px;
+      margin-right: 60px;
+      img{
+        width: 179px;
+        height: 92px;
+      }
+    }
+    &-contacts{
+      width: calc(100% - 420px);
+      .link + .link{
+        margin: 20px 0 0 0;
+      }
+    }
+    &-social{
+      width: 160px;
+      margin-bottom: -20px;
+      &__item{
+        margin: 0 20px 20px 0;
+      }
+    }
+  }
+  /*==================*/
+}
+@media (max-width: 719px){
+  /*styles*/
+  .wrapper{
+    max-width: 576px;
+  }
+  .wb-title{
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 15px;
+  }
+  .wb-title__small{
+    font-size: 24px;
+    margin-bottom: 35px;
+  }
+  /**/
+  /*HEADER*/
+  .header{
+    &-content{
+      padding: 10px 15px 0 15px;
+      &__menu{
+        padding: 10px 15px 47px 15px;
+      }
+    }
+    &-list{
+      width: 100%;
+      font-size: 16px;
+      &__item+&__item{
+        margin-top: 40px;
+      }
+    }
+    .mobile-img{
+      margin: 0;
+      width: 115px;
+      height: 58px;
+    }
+    .hamburger{
+      right: 15px;
+      top: 30px;
+    }
+    &-logo{
+      margin: 0 0 45px 0;
+      img{
+        width: 115px;
+        height: 58px;
+        margin: 0;
+      }
+      &+ .header-list{
+        width: 100%;
+        margin-top: 40px;
+      }
+    }
+  }
+  /**/
+  /*main-frst*/
+  .main-frst{
+    position: relative;
+    height: 580px;
+    background: url(../img/main-frst__mobile.jpg) 50% 70%  no-repeat;
+    background-size: cover;
+    margin-bottom: 80px;
+    padding-top: 130px;
+    .title{
+      font-size: 28px;
+      line-height: 36px;
+      margin-bottom: 29px;
+    }
+    .description{
+      font-size: 16px;
+      line-height: 22px;
+    }
+    .wb-btn{
+      width: 100%;
+      max-width: 330px;
+      bottom: 15px;
+      left: 50%;
+      position: absolute;
+      transform: translateX(-50%);
+    }
+  }
+  /**/
+  /*main-scnd*/
+  .main-scnd{
+    margin-bottom: 80px;
+  }
+  .price-block{
+    background: transparent!important;
+    height: auto;
+    margin: 0;
+  }
+  .circle-list{
+    display: none;
+  }
+  .price-list{
+    position: static;
+    &__item+&__item{
+      margin-top: 20px;
+    }
+    &__item{
+      transition-delay: 0s;
+      opacity: 1;
+      transform: translateX(0);
+      position: static;
+      width: 100%;
+      .title{
+        font-size: 14px;
+      }
+      .price{
+        font-size: 20px;
+      }
+    }
+  }
+  .list-title{
+    display: block;
+  }
+  /**/
+  /*main-third*/
+  .main-third{
+    margin-bottom: 80px;
+  }
+  .block-description{
+    width: 100%;
+  }
+  .block-bg{
+    display: none;
+  }
+  /**/
+  /*main-fourth*/
+  .main-fourth{
+    margin-bottom: 60px;
+    .slick-list{
+      margin-left: -315px;
+    }
+  }
+  .preview-description{
+    margin-bottom: 40px;
+  }
+  .active-slide{
+    height: 350px;
+  }
+  /**/
+  /*main-reviews*/
+  .main-reviews{
+    margin-bottom: 80px;
+  }
+
+  /*main-partners*/
+  .main-partners{
+    margin-bottom: 80px;
+  }
+  .partner-card{
+    width: calc(33.33% - 30px);
+  }
+  /**/
+  .main-info{
+    margin-bottom: 80px;
+    &__top{
+      margin-bottom: 45px;
+    }
+    &__middle .text{
+      column-gap: 30px;
+    }
+  }
+  .block-info{
+    margin-bottom: 50px;
+    width: 100%;
+  }
+  .block-aditional{
+    width: 100%;
+    .wb-title__small{
+      padding-left: 0;
+    }
+  }
+  /*main-warranty*/
+  .warranty-img{
+    display: none;
+  }
+  .main-warranty{
+    .mobile-img{
+      display: block;
+      height: 350px;
+      background: 50% 50% no-repeat;
+      background-size: cover;
+      margin-bottom: 40px;
+    }
+  }
+  /**/
+  /*footer*/
+  .footer{
+    height: 190px;
+    &-logo{
+      padding: 0;
+      margin: 0;
+      width: 43.5%;
+      img{
+        width: 115px;
+        height: 58px;
+      }
+    }
+    &-contacts{
+      width: 56.4%;
+    }
+    &-social{
+      width: 300px;
+      margin: auto;
+      justify-content: space-between;
+      &__item{
+        margin: 0;
+      }
+    }
+  }
+  /**/
+}
+@media (max-width: 576px){
+  .wrapper{
+    width: 100%;
+  }
+  /*main*/
+  /*main-frst*/
+  .main-frst{
+    background: url(../img/main-frst__mobile.jpg) 50% 70%  no-repeat;
+    background-size: cover;
+    .title{
+      font-size: 27px;
+    }
+  }
+  /**/
+  /*main-scnd*/
+  .price-list__item{
+    .title{
+      display: none;
+    }
+    .mobile-text{
+      display: block;
+    }
+  }
+  /**/
+  /*.main-third*/
+  .main-third .slider-card{
+    height: auto;
+    padding-top: 6%;
+  }
+  /**/
+  /*main-fourth*/
+  .preview-description .wb-btn{
+    width: 330px;
+  }
+  .active-slide{
+    height: auto;
+    padding-top: 63%;
+  }
+  .main-fourth__slider{
+    margin: auto;
+    .slick-list{
+      margin-left: -30px;
+    }
+  }
+  .main-fourth .completed-card{
+    height: auto;
+    padding-top: 3.5%;
+  }
+  /**/
+  /*main-reviews*/
+  .main-reviews{
+    .wb-btn{
+      width: 330px;
+    }
+  }
+  .reviews-card{
+    height: auto;
+    padding-top: 55%;
+    width: calc(100% - 30px);
+    &:nth-child(2) ~ .reviews-card{
+      display: none;
+    }
+  }
+  /*main-partners*/
+  .partner-card{
+    width: calc(50% - 30px);
+  }
+  /**/
+  /*main-info*/
+  .block-info img{
+    margin-right: 30px;
+  }
+  .block-info__content .text{
+    width: calc(100% - 112px);
+  }
+  .main-info__middle .text{
+    columns: unset;
+  }
+  .main-info__bottom img{
+    max-height: 40px;
+    max-width: 115px;
+  }
+  /**/
+  /*main-warranty*/
+  .main-warranty .mobile-img{
+    height: auto;
+    padding-top: 70%;
+  }
+  .wb-btn.btn-black{
+    width: 330px;
+  }
+  /**/
+  /*main-form*/
+  .form-field{
+    width: 100%;
+    &+ .form-field{
+      margin: 20px 0 0;
+    }
+  }
+  /**/
+  /*main-form*/
+  .main-form .contacts-content{
+    order: unset!important;
+    width: 100%;
+    &+ .contacts-content{
+      margin-top: 15px;
+    }
+  }
+  /**/
+  /*footer*/
+  .footer-contacts i{
+    display: none;
+  }
+  /**/
+  /*slider*/
+    /*slider*/
+  .slick-dots {
+    line-height: 1 !important;
+    bottom: 5px !important;
+  }
+  .slick-dots:before {
+    content: attr(data-current);
+    font-size: 24px;
+  }
+  .slick-dots:after {
+    content: "/" attr(data-lenght);
+    font-size: 16px;
+  }
+  .slick-dots li {
+    display: none !important;
+  }
+  /**/
+}
