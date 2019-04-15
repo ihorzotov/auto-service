@@ -536,7 +536,7 @@
   /**/
 }
 
-@media (max-width: 576px) {
+@media (max-width: 575px) {
   .wrapper {
     width: 100%;
   }
@@ -550,6 +550,13 @@
     font-size: 27px;
   }
   /**/
+  .wb-btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main-reviews .wb-btn {
+    margin: 30px auto 0;
+  }
   /*main-scnd*/
   .price-list__item .title {
     display: none;

@@ -6,7 +6,6 @@
   <title>Document</title>
   <link rel="icon" href="" type="image/png">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/media.css">
   <link rel="stylesheet" href="css/slick-theme.css">
 </head>
 <body>
@@ -20,19 +19,19 @@
       <img src="img/logo.png" alt="" class="mobile-img">
       <div class="header-content__menu flex-c">
         <ul class="header-list flex-c">
-          <li class="header-list__item"><a href="#frst">главная</a></li>
-          <li class="header-list__item"><a href="#">стоимость</a></li>
-          <li class="header-list__item"><a href="#">о нас</a></li>
-          <li class="header-list__item"><a href="#">выполненные работы</a></li>
+          <li class="header-list__item"><a href="#frst" class="js-scroll">главная</a></li>
+          <li class="header-list__item"><a href="#scnd" class="js-scroll">стоимость</a></li>
+          <li class="header-list__item"><a href="#third" class="js-scroll">о нас</a></li>
+          <li class="header-list__item"><a href="#fourth" class="js-scroll">выполненные работы</a></li>
         </ul>
         <div class="header-logo">
           <img src="img/logo.png" alt="">
         </div>
         <ul class="header-list flex-c">
-          <li class="header-list__item"><a href="#">видеоотзывы</a></li>
-          <li class="header-list__item"><a href="#">партнеры</a></li>
-          <li class="header-list__item"><a href="#">гарантии</a></li>
-          <li class="header-list__item"><a href="#">контакты</a></li>
+          <li class="header-list__item"><a href="#reviews" class="js-scroll">видеоотзывы</a></li>
+          <li class="header-list__item"><a href="#partners" class="js-scroll">партнеры</a></li>
+          <li class="header-list__item"><a href="#warranty" class="js-scroll">гарантии</a></li>
+          <li class="header-list__item"><a href="#form" class="js-scroll">контакты</a></li>
         </ul>
       </div>
     </div>
@@ -48,17 +47,17 @@
       <div class="wrapper" id="frst">
         <h4 class="title">все виды ремонтных работ</h4>
         <p class="description">Мы проведем для вас бесплатную дефектовку в вашем присутствии <br>и предоставим 4 варианта расчета стоимости</p>
-        <a href="#" class="wb-btn">записаться на сервис</a>
+        <a href="#form" class="wb-btn js-scroll">записаться на сервис</a>
       </div>
     </div>
-    <div class="main-scnd">
+    <div class="main-scnd" id="scnd">
       <div class="wrapper">
         <div class="main-scnd__top flex-c">
           <div class="title-block">
             <p class="wb-title">стоимость ремонтных работ под ключ</p>
             <p class="wb-text">Все расходные материалы включены в стоимость <br> Вы имеете возможность контролировать качество расходных материалов,<br> грунтов, красок и зап. частей!</p>
           </div>
-          <button class="wb-btn btn-simple js-show-price"><i>1</i> <span class="text"></span></button>
+          <button class="wb-btn btn-simple js-show-price"><i class="icon-tag"></i> <span class="text"></span></button>
         </div>
         <div class="price-block" style="background-image: url(img/car.png);">
           <ul class="circle-list">
@@ -154,19 +153,19 @@
         </div>
       </div>
     </div>
-    <div class="main-third">
+    <div class="main-third js-animation" id="third">
       <div class="wrapper">
         <div class="main-third__preview flex-s">
-          <div class="block-description">
+          <div class="block-description animation-left">
             <p class="wb-title">о нас</p>
             <p class="wb-text">Автосервис “Корвет” более 10 лет предоставляет услуги по техническому обслуживанию и ремонту автомобилей.  За этот период мастера станции накопили огромный опыт по ремонту европейских, корейских и японских авто.</p>
             <p class="wb-text">
               В наличии СТО современные подъемники, необходимое оборудования и специализированный инструмент для предоставления качественного ремонта втомобилей различных марок.
             </p>
           </div>
-          <div class="block-bg" style="background-image: url(img/place.png);"></div>
+          <div class="block-bg  animation-right" style="background-image: url(img/place.png);"></div>
         </div>
-        <div class="main-third__slider slider-counter">
+        <div class="main-third__slider slider-counter  animation-bottom">
           <div class="slider-card" style="background-image: url(img/third__slider1.png);"></div>
           <div class="slider-card" style="background-image: url(img/third__slider2.png);"></div>
           <div class="slider-card" style="background-image: url(img/third__slider2.png);"></div>
@@ -174,18 +173,18 @@
         </div>
       </div>
     </div>
-    <div class="main-fourth">
+    <div class="main-fourth js-animation" id="fourth">
       <div class="wrapper">
         <div class="main-fourth__preview flex-s">
-          <div class="active-slide"></div>
-          <div class="preview-description">
+          <div class="active-slide animation-left"></div>
+          <div class="preview-description  animation-right">
             <p class="wb-title">записаться на сервис</p>
             <p class="wb-text">Все ваши проблемы мы решаем быстро и качественно. Нам важен каждый клиент и наша репутация. По окончании работ мы выдаем накладную с подробным описанием всех расходов и выполненных нами работ.</p>
             <p class="wb-text">Все наши клиенты остаются довольны результатами ремонта, но если у вас есть к нам претензии  - вы всегда можете нам об этом сообщить, оставив свой отзыв. Он будет рассмотрен в кратчайшие сроки и в обязательном порядке. </p>
-            <a href="#" class="wb-btn">записаться на сервис</a>
+            <a href="#form"  class="wb-btn js-scroll">записаться на сервис</a>
           </div>
         </div>
-        <div class="main-fourth__slider slider-counter">
+        <div class="main-fourth__slider slider-counter  animation-bottom">
           <div class="completed-card">
             <!-- <iframe class="completed-card__content" width="560" height="315" src="https://www.youtube.com/embed/4xaInTvFx4k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
           </div>
@@ -207,7 +206,7 @@
         </div>
       </div>
     </div>
-    <div class="main-reviews">
+    <div class="main-reviews" id="reviews">
       <div class="wrapper">
         <p class="wb-title">видеоотзывы</p>
         <div class="review-container flex-c">
@@ -217,7 +216,7 @@
         <button class="wb-btn js-show-more btn-simple">больше отзывов</button>
       </div>
     </div>
-    <div class="main-partners">
+    <div class="main-partners" id="partners">
       <div class="wrapper">
         <p class="wb-title">партнеры</p>
         <div class="main-partners__content flex-c">
@@ -286,11 +285,11 @@
         </div>
       </div>
     </div>
-    <div class="main-warranty">
+    <div class="main-warranty js-animation" id="warranty">
       <div class="wrapper">
         <div class="main-warranty__container flex-s">
-          <div class="warranty-img" style="background-image: url(img/warranty-img.png);"></div>
-          <div class="warranty-content">
+          <div class="warranty-img animation-left" style="background-image: url(img/warranty-img.png);"></div>
+          <div class="warranty-content  animation-right">
             <p class="wb-title">гарантии</p>
             <p class="wb-text">Мы выписываем 3-х летнюю гарантию на свои услуги. Так же вы можете воспользоваться нашим сервисом без ущерба для гарантии от производителя при обслуживании недавно приобретенного авто.</p>
             <ul class="warranty-list">
@@ -313,14 +312,14 @@
             </ul>
             <div class="mobile-img" style="background-image: url(img/warranty-img.png);"></div>
             <p class="wb-text">Если вы считаете, что мы нарушили свои обязательства или у вас емть претензии к качеству выполненных нами работ, вы можете оставить свою жалобу здесь. Она обязательно будет рассмотрена в кратчайшие строки.</p>
-            <a href="#" class="wb-btn btn-black">оставить жалобу</a>
+            <a href="#form" class="wb-btn btn-black js-scroll">оставить жалобу</a>
           </div>
         </div>
       </div>
     </div>
-    <div class="main-form">
+    <div class="main-form js-animation" id="form">
       <div class="wrapper flex-s">
-        <div class="contacts">
+        <div class="contacts  animation-left">
           <p class="wb-title">контакты</p>
           <div class="contacts-content">
             <p class="title">Адрес:</p>
@@ -339,7 +338,7 @@
             <a href="mailto:automaster@gmail.com" class="text">automaster@gmail.com</a>
           </div>
         </div>
-        <form class="form flex-s">
+        <form class="form flex-s  animation-right">
           <p class="wb-title">Форма связи</p>
           <input type="text" class="form-field" placeholder="Имя">
           <input type="text" class="form-field" placeholder="Телефон">

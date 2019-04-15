@@ -8,7 +8,7 @@ APP.$hamburger = $('.hamburger');
 APP.$dopdownMenu = $('.header-content__menu');
 
 
-$(document).ready(function(){
+APP.$document.ready(function(){
 
   APP.$hamburger.on('click', function(){
     $(this).toggleClass('active');
@@ -153,6 +153,15 @@ $('.slider-counter').each(function(key, item){
 });
 
 // show more 
+function hideShowBtn(){
+  var reviewsCardLenght = $('.reviews-card').length;
+
+  if($('.reviews-card:visible').length == reviewsCardLenght){
+    APP.$showMoreBtn.addClass('disabled');
+  };
+};
+hideShowBtn();
+
 APP.$showMoreBtn.on('click', function(){
   var visibleReviews = $('.reviews-card:visible'),
       visibleLenght = visibleReviews.length,
@@ -160,10 +169,36 @@ APP.$showMoreBtn.on('click', function(){
 
   visibleReviews.last().nextAll('.reviews-card').slice(0,visibleLenght).fadeIn(500);
 
-  if($('.reviews-card:visible').length == reviewsCardLenght){
-    APP.$showMoreBtn.addClass('disabled');
-  };
-
+  hideShowBtn();
 });
+
+// animation scroll
+  APP.$document.on("click"," .js-scroll" , function (event) {
+    event.preventDefault();
+    
+    var id  = $(this).attr('href'),
+        top = $(id).offset().top;
+    
+    APP.$hamburger.removeClass('active');
+    $('.header-content__menu.active').removeClass('active');
+    $('body,html').animate({scrollTop: top}, 500);
+  });
+
+ APP.$document.on('scroll', function(){
+   var windowScroll = $(window).height() + APP.$document.scrollTop(),
+     element = APP.$document.find('.js-animation:not(.animate)')[0],
+     elementOffset = 0;
+     
+  try{
+    elementOffset = element.offsetTop + 200;
+  }catch(e){
+  }
+   
+  
+  if(windowScroll >= elementOffset && elementOffset !== undefined){
+    $('.js-animation:not(.animate)').first().addClass('animate');
+  }
+   
+  });
 
 });//document ready
