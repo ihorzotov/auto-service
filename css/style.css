@@ -996,6 +996,7 @@ span, a, label {
   width: calc(25% - 30px);
   height: 170px;
   border: 1px solid #d9d9d9;
+  background: #fff;
 }
 
 .partner-card img {
